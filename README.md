@@ -127,7 +127,7 @@ public static char[][] createMatrix(String keyword) {
             }
         }`
  
-<h4> alphabet.toCharArray(); converts the alphabet string into an array of characters.  for (char c : alphabet.toCharArray()) iterates though each in the alpha <br>  if (!used[c - 'A']) neans if the if the char does't already used and It has't been placed, doing what inside the term  <br> 
+<h4> alphabet.toCharArray(); converts the alphabet string into an array of characters.  for (char c : alphabet.toCharArray()) iterates though each in the alphabets <br> <br>  if (!used[c - 'A']) neans if the if the char does't already used and It has't been placed, doing what inside the term  <br> 
  matrix[index / 5][index % 5] = c;
                 used[c - 'A'] = true;
                 index++; this opration help us to find the specific index that we want to catch, the next line put the boolean "used" in the same index to be true and prevnte use the same char     </h4>
