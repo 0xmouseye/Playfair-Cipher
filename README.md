@@ -28,7 +28,7 @@
 
         System.out.println("\nEncrypted Text: " + encryptedText);
     }
-<h3>Using preparePlaintext and encrypt methods a </h3>
+<h3>Using preparePlaintext and encrypt methods  </h3>
 
 
 
