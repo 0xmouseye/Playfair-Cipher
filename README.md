@@ -22,3 +22,19 @@
        <h3>doing the same thing to get the cipher text: "ASRY" </h3>
        <br> <br>
        <h1>Code interpretation </h1>
+
+       public class playfair_Cipher {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("W       W      EEEEE      L           CCCCC      OOOOO      M     M      EEEEE");
+        System.out.println("W       W      E          L          C          O     O     MM   MM      E    ");
+        System.out.println("W   W   W      EEEE       L          C          O     O     M M M M      EEEE ");
+        System.out.println(" W W W W       E          L          C          O     O     M  M  M      E    ");
+        System.out.println("  W   W        EEEEE      LLLLL      CCCCC       OOOOO      M     M      EEEEE");
+        System.out.println();
+        System.out.println("**************************************************************************************************************");
+        System.out.println("|______________________________________________________________________________________________________________|");
+       
+        System.out.println("Playfair Cipher Encryption");
+
+<h5>Welcome design</h5>
