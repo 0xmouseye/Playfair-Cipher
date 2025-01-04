@@ -126,11 +126,25 @@ public static char[][] createMatrix(String keyword) {
                 index++;
             }
         }`
+        <h4> keyword.toCharArray(); converts the keyword string into an array of characters.  for (char c : keyword.toCharArray()) iterates though each in the alphabets <br> <br>  if (!used[c - 'A']) neans if the if the char does't already used and It has't been placed, doing what inside the term  <br> 
+ matrix[index / 5][index % 5] = c;
+                used[c - 'A'] = true;
+                index++; this opration help us to find the specific index that we want to catch, the next line put the boolean "used" in the same index to be true and prevnte use the same char more time.</h4>
+
+        `  for (char c : alphabet.toCharArray()) {
+            if (!used[c - 'A']) {
+                matrix[index / 5][index % 5] = c;
+                used[c - 'A'] = true;
+                index++;
+            }
+        }
+        return matrix;
+    }``
  
 <h4> alphabet.toCharArray(); converts the alphabet string into an array of characters.  for (char c : alphabet.toCharArray()) iterates though each in the alphabets <br> <br>  if (!used[c - 'A']) neans if the if the char does't already used and It has't been placed, doing what inside the term  <br> 
  matrix[index / 5][index % 5] = c;
                 used[c - 'A'] = true;
-                index++; this opration help us to find the specific index that we want to catch, the next line put the boolean "used" in the same index to be true and prevnte use the same char     </h4>
+                index++;  <br><br> This method create a 5*5 matrix with the keword. </h4>
 
 
 
