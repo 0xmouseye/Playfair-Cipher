@@ -170,6 +170,7 @@ public static char[][] createMatrix(String keyword) {
     } 
     }
 
+<p>method to design the output like the pictuer above </p>
 
 
 
