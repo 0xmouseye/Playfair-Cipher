@@ -1,3 +1,6 @@
+
+ 
+ 
  <h1>Play cipher encryption</h1>
         <h4>One of the most popular encryption models in the world, was the first cipher to encrypt pairs of letters in cryptologic history. <br> 
             <br> <q>Wheatstone</q> invented the cipher for secrecy in telegraphy, but it carries the name of his friend <q>Lord Playfair</q>. </h4>
@@ -112,11 +115,24 @@ public static char[][] createMatrix(String keyword) {
   `  String alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; 
         char[][] matrix = new char[5][5];
         boolean[] used = new boolean[26];
+         int index = 0;
 `
-   <h3> create the alphabets with out j, create char vairable with 2D array, and boolean to check if char has been used or not. </h3>
-
+   <h4> create the alphabets with out j, create char vairable with 2D array, boolean to check if char has been used or not, and index vairable to track the String alphabet.  </h4>
+   
+` for (char c : keyword.toCharArray()) { 
+            if (!used[c - 'A']) {
+                matrix[index / 5][index % 5] = c;
+                used[c - 'A'] = true;
+                index++;
+            }
+        }`
  
-
+<h4><span style = "padding: 5px 13px;
+            background-color: #2d2d2d; /* Dark gray */
+            color: white;
+            border-radius: 20px; /* Rounded edges */
+            font-size: 14px;
+            transition: background-color 0.3s ease;"> alphabet.toCharArray() </span> converts the alphabet string into an array of characters.  for (char c : alphabet.toCharArray()) iterates though each in the alpha </h4>
 
 
 
