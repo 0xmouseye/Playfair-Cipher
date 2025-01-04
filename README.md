@@ -147,6 +147,31 @@ public static char[][] createMatrix(String keyword) {
                 index++;  <br><br> This method create a 5*5 matrix with the keword. </h4>
 
 
+               `  public static void printmatrix(char  matrix [][] ){
+        System.out.println("\n");
+        System.out.println("****************************************");
+        System.out.println("\n");
+
+        System.out.println("5x5 PLAYFAIR CIPHER MATRIX!!!!!!:");
+    for (int i = 0; i<5; i++){
+    System.out.println(" ");
+    if(i==0){
+        System.out.println("___________________");
+     
+    } 
+    for(int j=0; j<5; j++)
+    {
+    System.out.print(matrix[i][j]+ " | "); 
+    }
+    if(i==4 && i==4){
+    System.out.println();
+    System.out.println("___________________");
+    }
+    } 
+    }
+`
+
+
 
         
 
