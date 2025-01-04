@@ -217,7 +217,10 @@ public static char[][] createMatrix(String keyword) {
     If the current character is the same as the next character `(current == plaintext.charAt(i + 1))`.
 
 If both are true:
-   An 'X' is added to separate the duplicate characters.
+   An 'X' is added to separate the duplicate characters `prepared.append(current);`.
+   <br>
+   
+   
         
         
 
