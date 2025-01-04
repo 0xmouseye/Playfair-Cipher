@@ -147,7 +147,7 @@ public static char[][] createMatrix(String keyword) {
                 index++;  <br><br> This method create a 5*5 matrix with the keword. </h4>
 
 
-               `  public static void printmatrix(char  matrix [][] ){
+                public static void printmatrix(char  matrix [][] ){
         System.out.println("\n");
         System.out.println("****************************************");
         System.out.println("\n");
@@ -169,7 +169,7 @@ public static char[][] createMatrix(String keyword) {
     }
     } 
     }
-`
+
 
 
 
