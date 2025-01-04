@@ -213,7 +213,7 @@ public static char[][] createMatrix(String keyword) {
                 prepared.append('X');
             }
         }` <br>
-     If there's a next character `(i + 1 < plaintext.length())`.
+     If there's a next character `(i + 1 < plaintext.length())`. <br>
     If the current character is the same as the next character `(current == plaintext.charAt(i + 1))`.
 
 If both are true:
