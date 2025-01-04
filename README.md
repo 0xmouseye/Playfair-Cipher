@@ -14,3 +14,21 @@
    - System.out.print("heloo");
 </body>
 </html>
+
+# CHANGE LOG
+
+## v1.6.64
+	- Added menu option F10 to launch kmake on "Build.kmk" in project root folder
+
+## v1.6.63
+	- start of cleanup code with the possible intention of making HIDE
+	  more language agnostic.
+	- removed NOTES from output, removed unused 'anchor' button from side windows
+	- loading and saving the resource images in a modern image editor fixed the pale
+	  images in the Properties Panel buttons.
+	- removed the now unused captionbutton.hla unit
+	- fixed PATH envrionment getting messed up if there is a USER defined path and "Set" is clicked in project manager
+
+## v1.6.3
+	- Fixed Insert File at Cursor crash
+	
