@@ -46,8 +46,15 @@
 `
 
 
-<h5>The program ask user to write the keyword, the </h5>
- `String keyword  = scanner.nextLine()`
- <p>to make the user able to put input. </p> 
+<h5>The program ask user to write the keyword, the </h5>  
+
+`scanner.nextLine()`
+<p>to make the user able to put input. </p> 
+
+`.toUpperCase()`
+
+
+
+        
 
 
