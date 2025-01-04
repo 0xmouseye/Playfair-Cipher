@@ -83,20 +83,22 @@
 
 <p>If the keyword or the plaintext are empty print "Please provide both a keyword and plaintext." </p>
 
-`public static char[][] createMatrix(String keyword) {
+
+
+
+`
+public static char[][] createMatrix(String keyword) {
         String alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; 
         char[][] matrix = new char[5][5];
         boolean[] used = new boolean[26];
         int index = 0;
-
-        for (char c : keyword.toCharArray()) { <br>
+        for (char c : keyword.toCharArray()) { 
             if (!used[c - 'A']) {
                 matrix[index / 5][index % 5] = c;
                 used[c - 'A'] = true;
                 index++;
             }
         }
-
         for (char c : alphabet.toCharArray()) {
             if (!used[c - 'A']) {
                 matrix[index / 5][index % 5] = c;
@@ -104,11 +106,13 @@
                 index++;
             }
         }
-
         return matrix;
     }`
-
-
+  `  String alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; 
+        char[][] matrix = new char[5][5];
+        boolean[] used = new boolean[26];
+`
+   <h3> create the alphabets with out j, create char vairable with 2D array, and boolean to check if char has been used or not. </h3>
 
  
 
