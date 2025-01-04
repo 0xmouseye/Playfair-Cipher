@@ -34,7 +34,7 @@
 <body>
         <h1>Play cipher encryption</h1>
         <h3>One of the most popular encryption models in the world, was the first cipher to encrypt pairs of letters in cryptologic history. <br> 
-            <br> <samp>Wheatstone </samp>invented the cipher for secrecy in telegraphy, but it carries the name of his friend Lord Playfair. </h3>
+            <br> <q>Wheatstone<q> invented the cipher for secrecy in telegraphy, but it carries the name of his friend Lord Playfair. </h3>
     </div>
 </body>
 </html>
