@@ -54,7 +54,7 @@
 `.toUpperCase()`<p> to make all alphabets capitales </p>
 
 
-`replaceAll("[^A-Z]", "").replace('J', 'I');` <p> to replace all input dose't letters to nothing  </p>
+`replaceAll("[^A-Z]", "").replace('J', 'I');` <p> to replace all input dose't letters to nothing, and replace any input hava 'j' char to 'i' because we don't want 'j' letter. </p>
 
 
 
