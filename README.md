@@ -48,10 +48,16 @@
 
 <h5>The program ask user to write the keyword, the </h5>  
 
-`scanner.nextLine()`
-<p>to make the user able to put input. </p> 
+`scanner.nextLine()`<p>to make the user able to put input. </p> 
 
-`.toUpperCase()`
+
+`.toUpperCase()`<p> to make all alphabets capitales </p>
+
+
+`replaceAll("[^A-Z]", "").replace('J', 'I');` <p> to replace all input dose't letters to nothing  </p>
+
+
+
 
 
 
