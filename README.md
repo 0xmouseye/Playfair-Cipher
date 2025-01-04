@@ -212,7 +212,7 @@ public static char[][] createMatrix(String keyword) {
    char current = plaintext.charAt(i);` used to confirm at what number the plain text stop. <br> ` prepared.append(current);` used to hold all plain text <br> `            if (i + 1 < plaintext.length() && current == plaintext.charAt(i + 1)) {
                 prepared.append('X');
             }
-        }`
+        }` <br>
      If there's a next character `(i + 1 < plaintext.length())`.
     If the current character is the same as the next character `(current == plaintext.charAt(i + 1))`.
 
