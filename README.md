@@ -127,12 +127,9 @@ public static char[][] createMatrix(String keyword) {
             }
         }`
  
-<h4><span style = "padding: 5px 13px;
-            background-color: #2d2d2d; /* Dark gray */
-            color: white;
-            border-radius: 20px; /* Rounded edges */
-            font-size: 14px;
-            transition: background-color 0.3s ease;"> alphabet.toCharArray() </span> converts the alphabet string into an array of characters.  for (char c : alphabet.toCharArray()) iterates though each in the alpha </h4>
+<h4> alphabet.toCharArray(); converts the alphabet string into an array of characters.  for (char c : alphabet.toCharArray()) iterates though each in the alpha <br>  if (!used[c - 'A']) neans if the if the char does't already used and It has't been placed, doing what inside the term  <br>  matrix[index / 5][index % 5] = c;
+                used[c - 'A'] = true;
+                index++;   </h4>
 
 
 
