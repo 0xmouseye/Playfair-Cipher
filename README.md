@@ -13,15 +13,30 @@
        <img src="Screenshot 2025-01-04 071927.png" alt="matrix 5*5 " width="300px" >
        <h3>The first thing we notice that is the letters of the key word are written at beginning, and "e" char has not been rewritten. <br>
        that because we need from the key word only "chars" not whole "keyword".</h3>
-       <h3> assume that the plaintxet is "cold", here is how to encrypted</h3>
+       <h3> Assume that the plaintxet is "cold", here is how to encrypted</h3>
        <h2>stpe 1 'c' and 'o':</h2>
        <img src="Screenshot 2025-01-04 082401.png" alt="encryption c and o" width="300">
        <h3>When we find the tow letters, we put square around them, and after this we chose the most left letter (for c) and the most right letter (for o) to be "AS" </h3>
-       <h2>step 2 'l' and 'd' :</h2>
+       <h2>Step 2 'l' and 'd' :</h2>
        <img src="Screenshot 2025-01-04 083605.png" alt="step 2" width="300px">
-       <h3>doing the same thing to get the cipher text: "ASRY" </h3>
+       <h3>Doing the same thing to get the cipher text: "ASRY" </h3>
        <br> <br>
        <h1>Code interpretation </h1>
+       
+        String preparedText = preparePlaintext(plaintext);
+        String encryptedText = encrypt(preparedText, matrix);
+
+        System.out.println("\nEncrypted Text: " + encryptedText);
+    }
+<h3>Using preparePlaintext and encrypt methods a </h3>
+
+
+
+   
+
+
+
+   
 
        public class playfair_Cipher {
     public static void main(String[] args) {
@@ -53,13 +68,13 @@
 
 <h5>The program ask user to write the keyword, the </h5>  
 
-`scanner.nextLine()`<p>to make the user able to put input. </p> 
+`scanner.nextLine()`<p>To make the user able to put input. </p> 
 
 
-`.toUpperCase()`<p> to make all alphabets capitales </p>
+`.toUpperCase()`<p> To make all alphabets capitales </p>
 
 
-`replaceAll("[^A-Z]", "").replace('J', 'I');` <p> to replace all input dose't letters to nothing, and replace any input hava 'j' char to 'i' because we don't want 'j' letter. </p>
+`replaceAll("[^A-Z]", "").replace('J', 'I');` <p> To replace all input dose't letters to nothing, and replace any input hava 'j' char to 'i' because we don't want 'j' letter. </p>
 
 ` if (keyword.isEmpty() || plaintext.isEmpty()) {
             System.out.println("Please provide both a keyword and plaintext.");
@@ -67,6 +82,35 @@
         }`
 
 <p>If the keyword or the plaintext are empty print "Please provide both a keyword and plaintext." </p>
+
+`public static char[][] createMatrix(String keyword) {
+        String alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; 
+        char[][] matrix = new char[5][5];
+        boolean[] used = new boolean[26];
+        int index = 0;
+
+        for (char c : keyword.toCharArray()) { <br>
+            if (!used[c - 'A']) {
+                matrix[index / 5][index % 5] = c;
+                used[c - 'A'] = true;
+                index++;
+            }
+        }
+
+        for (char c : alphabet.toCharArray()) {
+            if (!used[c - 'A']) {
+                matrix[index / 5][index % 5] = c;
+                used[c - 'A'] = true;
+                index++;
+            }
+        }
+
+        return matrix;
+    }`
+
+
+
+ 
 
 
 
