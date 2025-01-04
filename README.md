@@ -43,7 +43,12 @@
         String keyword = scanner.nextLine().toUpperCase().replaceAll("[^A-Z]", "").replace('J', 'I');
        char[][] matrix = createMatrix(keyword); 
        printmatrix(matrix);
-`
+         System.out.print("Enter Text to Encrypt: ");
+        String plaintext = scanner.nextLine().toUpperCase().replaceAll("[^A-Z]", "").replace('J', 'I');
+        if (keyword.isEmpty() || plaintext.isEmpty()) {
+            System.out.println("Please provide both a keyword and plaintext.");
+            return;
+        }`
 
 
 <h5>The program ask user to write the keyword, the </h5>  
@@ -56,7 +61,12 @@
 
 `replaceAll("[^A-Z]", "").replace('J', 'I');` <p> to replace all input dose't letters to nothing, and replace any input hava 'j' char to 'i' because we don't want 'j' letter. </p>
 
+` if (keyword.isEmpty() || plaintext.isEmpty()) {
+            System.out.println("Please provide both a keyword and plaintext.");
+            return;
+        }`
 
+<p>If the keyword or the plaintext are empty print "Please provide both a keyword and plaintext." </p>
 
 
 
