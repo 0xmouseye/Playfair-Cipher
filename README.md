@@ -213,6 +213,12 @@ public static char[][] createMatrix(String keyword) {
                 prepared.append('X');
             }
         }`
+     If there's a next character `(i + 1 < plaintext.length())`.
+    If the current character is the same as the next character `(current == plaintext.charAt(i + 1))`.
+
+If both are true:
+   An 'X' is added to separate the duplicate characters.
+        
         
 
 
