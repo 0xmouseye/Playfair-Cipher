@@ -171,6 +171,31 @@ public static char[][] createMatrix(String keyword) {
     }
 
 <p>method to design the output like the pictuer above </p>
+<br><br>
+ 
+    public static String preparePlaintext(String plaintext) {
+        StringBuilder prepared = new StringBuilder();
+        
+        for (int i = 0; i < plaintext.length(); i++) {
+
+            char current = plaintext.charAt(i);
+
+            prepared.append(current);
+
+
+            if (i + 1 < plaintext.length() && current == plaintext.charAt(i + 1)) {
+                prepared.append('X');
+            }
+        }
+
+       
+        if (prepared.length() % 2 != 0) {
+
+            prepared.append('X');
+        }
+
+        return prepared.toString();
+    }
 
 
 
