@@ -38,3 +38,12 @@
         System.out.println("Playfair Cipher Encryption");
 
 <h5>Welcome design</h5>
+
+` System.out.print("Enter Keyword: ");
+        String keyword = scanner.nextLine().toUpperCase().replaceAll("[^A-Z]", "").replace('J', 'I');
+       char[][] matrix = createMatrix(keyword); 
+       printmatrix(matrix);
+`
+
+
+<h5>The program ask user to write the keyword, the `String keyword  = scanner.nextLine()`  </h5>
