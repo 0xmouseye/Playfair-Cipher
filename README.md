@@ -207,6 +207,7 @@ public static char[][] createMatrix(String keyword) {
                 prepared.append('X');
             }
         }`
+        <br><br>
    the for loop that provide `for (int i = 0; i < plaintext.length(); i++) ` used to confirm at what number the plain text stop 
         
 
