@@ -1,43 +1,27 @@
-# Playfair-Cipher
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RTP Buttons</title>
-   
-        
-    <style>
-        .code_font{   
-            font-family: 'Source Code Pro';  
-        }
-        .tags-container {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-        </style>
-        .tag {
-            padding: 5px 13px;
-            background-color: #2d2d2d; /* Dark gray */
-            color: white;
-            border-radius: 20px; /* Rounded edges */
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
-        .tag:hover {
-            background-color: #555555; /* Lighter gray on hover */
-        }
-    </style>
-</head>
-<body>
-        <h1>Play cipher encryption</h1>
-        <h3>One of the most popular encryption models in the world, was the first cipher to encrypt pairs of letters in cryptologic history. <br> 
-            <br> <q>Wheatstone</q> invented the cipher for secrecy in telegraphy, but it carries the name of his friend Lord Playfair. </h3>
-    </div>
-</body>
-</html>
+![HIDE](https://user-images.githubusercontent.com/46191274/124802325-d8433800-df25-11eb-85ce-46bf37e12300.png)
+
+# HIDE
+IDE for the HLA programming language
+
+This is a HIDE project file, use HIDE to compile.
+You can download HIDE from https://sites.google.com/view/androth/home/high-level-assembly
+
+The project is setup to look for a HIDE_WORK folder in the same tree level as the HIDE folder as a build target. This build target folder should be a copy of a standard HIDE folder.
 
 
+# CHANGE LOG
+
+## v1.6.64
+	- Added menu option F10 to launch kmake on "Build.kmk" in project root folder
+
+## v1.6.63
+	- start of cleanup code with the possible intention of making HIDE
+	  more language agnostic.
+	- removed NOTES from output, removed unused 'anchor' button from side windows
+	- loading and saving the resource images in a modern image editor fixed the pale
+	  images in the Properties Panel buttons.
+	- removed the now unused captionbutton.hla unit
+	- fixed PATH envrionment getting messed up if there is a USER defined path and "Set" is clicked in project manager
+
+## v1.6.3
+	- Fixed Insert File at Cursor crash
