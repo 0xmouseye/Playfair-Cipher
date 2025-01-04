@@ -13,3 +13,12 @@
        <img src="Screenshot 2025-01-04 071927.png" alt="matrix 5*5 " width="300px" >
        <h3>The first thing we notice that is the letters of the key word are written at beginning, and "e" char has not been rewritten. <br>
        that because we need from the key word only "chars" not whole "keyword".</h3>
+       <h3> assume that the plaintxet is "cold", here is how to encrypted</h3>
+       <h2>stpe 1 'c' and 'o':</h2>
+       <img src="Screenshot 2025-01-04 082401.png" alt="encryption c and o" width="300">
+       <h3>When we find the tow letters, we put square around them, and after this we chose the most left letter (for c) and the most right letter (for o) to be "AS" </h3>
+       <h2>step 2 'l' and 'd' :</h2>
+       <img src="Screenshot 2025-01-04 083605.png" alt="step 2" width="300px">
+       <h3>doing the same thing to get the cipher text: "ASRY" </h3>
+       <br> <br>
+       <h1>Code interpretation </h1>
