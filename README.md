@@ -1,4 +1,6 @@
 
+   </head>
+<body><div>
         <h1>Play cipher encryption</h1>
         <h4>One of the most popular encryption models in the world, was the first cipher to encrypt pairs of letters in cryptologic history. <br> 
             <br> <q>Wheatstone</q> invented the cipher for secrecy in telegraphy, but it carries the name of his friend <q>Lord Playfair</q>. </h4>
@@ -9,7 +11,9 @@
         <br>
     </div>
         <h2>What's can playfair encryption do to encrypt txet</h2>
-   - System.out.print("heloo");
+   
+</body>
+</html>
 
 
 # CHANGE LOG
