@@ -172,7 +172,7 @@ public static char[][] createMatrix(String keyword) {
 
 <p>method to design the output like the pictuer above </p>
 <br><br>
- 
+
     public static String preparePlaintext(String plaintext) {
         StringBuilder prepared = new StringBuilder();
         
@@ -196,6 +196,23 @@ public static char[][] createMatrix(String keyword) {
 
         return prepared.toString();
     }
+
+<h4>This method helpe us to prepare the plaintext, from add "X" char if the number of letters of plaintext dose't even number </h4>
+
+
+` for (int i = 0; i < plaintext.length(); i++) {
+            char current = plaintext.charAt(i);
+            prepared.append(current);
+            if (i + 1 < plaintext.length() && current == plaintext.charAt(i + 1)) {
+                prepared.append('X');
+            }
+        }`
+   the for loop that provide `for (int i = 0; i < plaintext.length(); i++) ` used to confirm at what number the plain text stop 
+        
+
+
+
+ 
 
 
 
