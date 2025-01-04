@@ -208,7 +208,11 @@ public static char[][] createMatrix(String keyword) {
             }
         }`
         <br><br>
-   the for loop that provide `for (int i = 0; i < plaintext.length(); i++) ` used to confirm at what number the plain text stop 
+   the for loop that provide `for (int i = 0; i < plaintext.length(); i++)  { 
+   char current = plaintext.charAt(i);` used to confirm at what number the plain text stop. <br> ` prepared.append(current);` used to hold all plain text <br> `            if (i + 1 < plaintext.length() && current == plaintext.charAt(i + 1)) {
+                prepared.append('X');
+            }
+        }`
         
 
 
