@@ -108,7 +108,7 @@ public static char[][] createMatrix(String keyword) {
         }
         return matrix;
     }`
-    <br>
+    <br> <br><br>
   `  String alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"; 
         char[][] matrix = new char[5][5];
         boolean[] used = new boolean[26];
