@@ -1,7 +1,4 @@
-# Playfair Cipher
 
-
-       
 </head>
 <body><div>
         <h1>Play cipher encryption</h1>
