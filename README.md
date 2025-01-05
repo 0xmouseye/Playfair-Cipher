@@ -226,7 +226,44 @@ If both are true:
   return prepared.toString();
     }`<br> if the letters of the plain text is odd, then add "X" char after the last letter, return the prepraed text and convert the variable form StringBuilder to String   <br> <br>
     
-   
+       public static String encrypt(String plaintext, char[][] matrix) {
+
+        StringBuilder ciphertext = new StringBuilder();
+
+        for (int i = 0; i < plaintext.length(); i += 2)
+         {
+
+            char first = plaintext.charAt(i );
+            char second = plaintext.charAt(  i + 1);
+
+            int[] pos1 = findPosition(first, matrix  );
+
+            int[] pos2 = findPosition(second, matrix  );
+
+            if (pos1[0] == pos2[0]) { 
+                  ciphertext.append(matrix[pos1[0]][(pos1[1] + 1) % 5]);
+
+                 ciphertext.append(matrix[pos2[0]][(pos2[1] + 1) % 5]);
+
+              } else if (pos1[1] == pos2[1]) { 
+
+                   ciphertext.append(matrix[(pos1[0] + 1) % 5][pos1[1]]) ;
+
+                ciphertext.append(matrix[(pos2[0] + 1) % 5][pos2[1]]);
+
+            } else {
+                ciphertext.append(matrix[pos1[0]][pos2[1]]);
+
+                ciphertext.append(matrix[pos2[0]][pos1[1]]);
+            }
+        }
+
+        return ciphertext.toString();
+    }
+
+<br>  in this code `
+        StringBuilder ciphertext = new StringBuilder();
+        for (int i = 0; i < plaintext.length(); i += 2)` we
         
         
 
