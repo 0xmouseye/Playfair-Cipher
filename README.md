@@ -224,7 +224,8 @@ If both are true:
   prepared.append('X');
   }
   return prepared.toString();
-    }`<br> if the letters of the plain text is odd, then add "X" char after the last letter <br> <br>
+    }`<br> if the letters of the plain text is odd, then add "X" char after the last letter, return the prepraed text and convert the variable form StringBuilder to String   <br> <br>
+    
    
         
         
