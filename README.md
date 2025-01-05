@@ -263,8 +263,20 @@ If both are true:
 
 <br>  in this code `
         StringBuilder ciphertext = new StringBuilder(); 
-        for (int i = 0; i < plaintext.length(); i += 2)` we defined cipher text vilue in `StringBuilder` class to be more effectively, and we make "i" incresung 2 times that becaues we will encrypt tow char for one for loop. <br> 
+        for (int i = 0; i < plaintext.length(); i += 2)` we defined cipher text vilue in `StringBuilder` class to be more effectively, and we make "i" incresung 2 times that becaues we will encrypt tow char for one for loop. <br> `
         
+            char first = plaintext.charAt(i );
+            char second = plaintext.charAt(  i + 1);
+
+            int[] pos1 = findPosition(first, matrix  );
+
+            int[] pos2 = findPosition(second, matrix  );`
+
+
+
+
+ <br>  Create tow chars and put them in `findPosition();` method
+
         
 
 
