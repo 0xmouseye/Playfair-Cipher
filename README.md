@@ -275,7 +275,9 @@ If both are true:
 
 
 
- <br>  Create tow chars and put them in `findPosition();` method
+ <br>  Create tow chars, and tow intagers array to equle `findPosition();` method with tow chars.
+ <br>
+ 
 
         
 
