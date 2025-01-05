@@ -219,7 +219,12 @@ public static char[][] createMatrix(String keyword) {
 If both are true:
    An 'X' is added to separate the duplicate characters `prepared.append(current);`.
    <br>
-   
+   <br>
+   `  if (prepared.length() % 2 != 0) {
+  prepared.append('X');
+  }
+  return prepared.toString();
+    }`<br> if the letters of the plain text is odd, then add "X" char after the last letter <br> <br>
    
         
         
