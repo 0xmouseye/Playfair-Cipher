@@ -277,6 +277,23 @@ If both are true:
 
  <br>  Create tow chars, and tow intagers array to equle `findPosition();` method with tow chars.
  <br>
+
+ 
+ `  
+ if (pos1[0] == pos2[0]) { 
+                  ciphertext.append(matrix[pos1[0]][(pos1[1] + 1) % 5]);
+                 ciphertext.append(matrix[pos2[0]][(pos2[1] + 1) % 5]);
+              } else if (pos1[1] == pos2[1]) { 
+                   ciphertext.append(matrix[(pos1[0] + 1) % 5][pos1[1]]) ;
+                ciphertext.append(matrix[(pos2[0] + 1) % 5][pos2[1]]);
+            } else {
+            ciphertext.append(matrix[pos1[0]][pos2[1]]);
+                ciphertext.append(matrix[pos2[0]][pos1[1]]);  }`
+
+ 
+ Same Row `(pos1[0] == pos2[0]` : Replace each letter with the one to its right (wrap around to the start if needed).
+Same Column ` (pos1[1] == pos2[1]) `: Replace each letter with the one below it (wrap around to the top if needed).
+Rectangle Rule `else`: Swap columns of the two letters.
  
 
         
