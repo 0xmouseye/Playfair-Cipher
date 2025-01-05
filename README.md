@@ -288,12 +288,27 @@ If both are true:
                 ciphertext.append(matrix[(pos2[0] + 1) % 5][pos2[1]]);
             } else {
             ciphertext.append(matrix[pos1[0]][pos2[1]]);
-                ciphertext.append(matrix[pos2[0]][pos1[1]]);  }`<br>
+                ciphertext.append(matrix[pos2[0]][pos1[1]]);  }
+                return ciphertext.toString(); 
+                }
+    }`<br>
 
  
  Same Row `(pos1[0] == pos2[0]` : Replace each letter with the one to its right (wrap around to the start if needed). <br>
 Same Column ` (pos1[1] == pos2[1]) `: Replace each letter with the one below it (wrap around to the top if needed). <br>
-Rectangle Rule `else`: Swap columns of the two letters.<br><br>
+Rectangle Rule `else`: Swap columns of the two letters.<br> return cipher text and convert it to String <br> <br> 
+` public static int[] findPosition(char c, char[][] matrix) {
+        for (int i = 0; i < 5; i++) {     
+            for (int j = 0; j < 5; j++) {
+                if (matrix[i][j] == c) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+        return null; 
+    }`<br> in this code we want from this code to go over every letter, if the char that we put it equle the char that matrix stopped at it doing this `return new int[]{i, j};` which mean Constructs and returns a new integer array containing the indices [i, j], which mean also that i refer to [0] index and j refer to [1] index.
+    <br><br><br>
+    Thank you for reading 
  
 
         
