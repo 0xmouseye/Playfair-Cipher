@@ -262,8 +262,8 @@ If both are true:
     }
 
 <br>  in this code `
-        StringBuilder ciphertext = new StringBuilder();
-        for (int i = 0; i < plaintext.length(); i += 2)` we
+        StringBuilder ciphertext = new StringBuilder(); 
+        for (int i = 0; i < plaintext.length(); i += 2)` we defined cipher text vilue in `StringBuilder` class to be more effectively, and we make "i" incresung 2 times that becaues we will encrypt tow char for one for loop. <br> 
         
         
 
